@@ -5,3 +5,5 @@ connect.php
 composer.lock
 composer.json
 vendor
+.gitattributes
+.gitignore
