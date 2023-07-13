@@ -4,7 +4,7 @@
 ?>
     <div class="projects-list projects-list-anim">
         <?php
-            $query = pg_query($conn, 'SELECT * FROM projects WHERE date_finished <= CURRENT_DATE ORDER BY date_finished DESC ');
+            $query = pg_query($conn, 'SELECT * FROM projects ORDER BY id DESC ');
             $results = pg_fetch_all($query);
             foreach ($results as $project) {
                 echo "

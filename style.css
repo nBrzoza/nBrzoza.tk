@@ -148,7 +148,7 @@ body .container {
 }
 #start .text h4 b {
   font-weight: 350;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, transparent 100%), #e03939;
+  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s;
@@ -206,6 +206,10 @@ body .container {
   padding-left: 2.2em;
   height: 10%;
   cursor: pointer;
+}
+
+.project-view {
+  flex-direction: column;
 }
 
 .contact-form {
