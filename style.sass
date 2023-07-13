@@ -136,7 +136,9 @@ body
             font-weight: 200
 
             b
-                color: #2dffff
+                background: -webkit-linear-gradient(273deg, transparent 0%, #00a6ff40 100%),-webkit-linear-gradient(0deg, #fcb1b140 0%, #aeaeae44 100%), #2dffff
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
                 font-weight: 250
 
         h4
@@ -144,7 +146,7 @@ body
 
             b
                 font-weight: 350
-                background: -webkit-linear-gradient(273deg, transparent 0%, #00a6ff40 100%),-webkit-linear-gradient(0deg, #fcb1b140 0%, transparent 100%), #e03939
+                background: -webkit-linear-gradient(273deg, transparent 0%, #e0393965 120%),-webkit-linear-gradient(0deg, #00ffff80 0%, transparent 100%), lightcyan
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent
                 transition: .3s
@@ -155,7 +157,7 @@ body
         p
 
             a
-                background: -webkit-linear-gradient(273deg, transparent 0%, #e0393965 120%),-webkit-linear-gradient(0deg, #00ffff80 0%, transparent 100%), white
+                background: -webkit-linear-gradient(273deg, transparent 0%, #e0393965 120%),-webkit-linear-gradient(0deg, #00ffff80 0%, transparent 100%), lightcyan
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent
                 text-decoration: none
@@ -164,21 +166,15 @@ body
 
                 &:hover
                     padding: 0 .5em
-                    border-bottom: .5px solid #2dffff
+                    border-bottom: .5px solid #47daea
 
 #my_projects
 
     div
         height: 80%
-        border: 1px solid #444
-
-        &:last-child
-            display: flex
-            justify-content: center
-            align-items: center
-            width: 75%
 
 .projects-list
+    border: 1px solid #444
     background: #222
     height: 100%
     width: 25%
@@ -204,6 +200,22 @@ body
             padding-left: 2.2em
             height: 10%
             cursor: pointer
+
+.project-view
+    display: flex
+    border: 1px solid #444
+    justify-content: center
+    align-items: center
+    width: 75%
+    flex-direction: column
+
+.project-details
+    width: 90%
+    border: none
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 1em
 
 .contact-form
     text-align: center

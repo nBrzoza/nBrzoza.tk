@@ -14,6 +14,7 @@
     <title>nBrzoza</title>
   </head>
   <body>
+    <div class="cursor"></div>
     <nav>
       <a href="#start"><h2>nBrzoza</h2></a>
       <div class="container1" onclick="open_menu(this)">
