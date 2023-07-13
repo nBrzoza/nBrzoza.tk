@@ -140,7 +140,9 @@ body .container {
   font-weight: 200;
 }
 #start .text h1 b {
-  color: #2dffff;
+  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 250;
 }
 #start .text h4 {
@@ -148,7 +150,7 @@ body .container {
 }
 #start .text h4 b {
   font-weight: 350;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), white;
+  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), lightcyan;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s;
@@ -157,7 +159,7 @@ body .container {
   transform: scale(1.2);
 }
 #start .text p a {
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), white;
+  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), lightcyan;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
