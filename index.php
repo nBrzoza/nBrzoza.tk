@@ -27,7 +27,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="menu">
+    <div class="menu" >
       <ul>
         <li><a href="#about_me">About Me</a></li>
         <li><a href="#my_projects">My Projects</a></li>

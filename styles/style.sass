@@ -16,6 +16,9 @@ body
     height: var(--screen-height)
     background-image: radial-gradient(at top, #111 0%, #000 100%)
 
+    .menu
+        display: none
+
     nav
         z-index: 10
         background: linear-gradient(to bottom, #111111dd 65%, transparent 100%)
@@ -172,15 +175,9 @@ body
 
     div
         height: 80%
-        border: 1px solid #444
-
-        &:last-child
-            display: flex
-            justify-content: center
-            align-items: center
-            width: 75%
 
 .projects-list
+    border: 1px solid #444
     background: #222
     height: 100%
     width: 25%
@@ -208,7 +205,54 @@ body
             cursor: pointer
 
 .project-view
-    flex-direction: column
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 75%
+    border: 1px solid #444
+    font-weight: 200
+
+    h2
+        font-weight: 300
+
+        b
+            color: #ABFFF5
+            font-weight: 400
+
+    span
+        color: #C1FAFF
+
+        &:nth-child(2n)
+            color: #B5E8F9
+            font-weight: 200
+
+    div
+        display: flex
+        gap: 1em
+        flex-direction: column
+        justify-content: center
+        margin: 5em
+
+    .links
+        width: min-content
+        height: min-content
+        display: flex
+        gap: 1em
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+
+        img
+            height: 2em
+            width: 2em
+            background: white
+            border: 2px solid white
+            border-radius: 100%
+            transition: .1s
+
+            &:hover
+                box-shadow: 0 0 20px cyan
+                transform: scale(1.2)
 
 .contact-form
     text-align: center
