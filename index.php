@@ -58,9 +58,9 @@
           require 'php/connect.php';
           $select = pg_fetch_all(pg_query($conn, 'SELECT * FROM skills ORDER BY level DESC'));
           foreach ($select as $skill) {
-            echo "<li class='$skill[level]'>
+            echo "<li>
               $skill[name]
-              <label>
+              <label class='span-$skill[level]'>
                 <span></span>
                 <span></span>
                 <span></span>

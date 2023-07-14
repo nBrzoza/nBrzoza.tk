@@ -188,8 +188,6 @@ body .container {
   justify-content: left;
   flex-direction: column;
   height: 50%;
-  overflow-y: scroll;
-  overflow-x: hidden;
   width: 40%;
 }
 #about_me .my_skills h2 {
@@ -197,7 +195,18 @@ body .container {
   font-weight: 300;
 }
 #about_me .my_skills ul {
+  overflow-y: scroll;
+  overflow-x: hidden;
   list-style: none;
+}
+#about_me .my_skills ul::-webkit-scrollbar {
+  width: 5px;
+  background: #333;
+  border-radius: 15px;
+}
+#about_me .my_skills ul::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #447777;
 }
 #about_me .my_skills ul li {
   padding: 0.2em;
@@ -207,15 +216,38 @@ body .container {
 #about_me .my_skills ul li:hover {
   color: #55ffff;
   transform: scale(1.1);
+  text-shadow: 1px 1px 10px white;
 }
-#about_me .my_skills::-webkit-scrollbar {
-  width: 5px;
-  background: #333;
-  border-radius: 15px;
+#about_me .my_skills ul li label {
+  float: right;
+  padding-right: 3em;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-#about_me .my_skills::-webkit-scrollbar-thumb {
-  border-radius: 15px;
-  background: #447777;
+#about_me .my_skills ul li label span {
+  border-radius: 50px;
+  display: block;
+  content: " ";
+  width: 15%;
+  height: 1em;
+  background: gray;
+}
+#about_me .my_skills ul li .span-1 span:nth-child(-n+1) {
+  background: #006E7A;
+}
+#about_me .my_skills ul li .span-2 span:nth-child(-n+2) {
+  background: #128C9E;
+}
+#about_me .my_skills ul li .span-3 span:nth-child(-n+3) {
+  background: #23AAC2;
+}
+#about_me .my_skills ul li .span-4 span:nth-child(-n+4) {
+  background: #41BDD5;
+}
+#about_me .my_skills ul li .span-5 span:nth-child(-n+5) {
+  background: #5FCFE8;
 }
 
 #my_projects div {

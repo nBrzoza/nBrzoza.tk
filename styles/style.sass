@@ -185,8 +185,6 @@ body
         justify-content: left
         flex-direction: column
         height: 50%
-        overflow-y: scroll
-        overflow-x: hidden
         width: 40%
 
         h2
@@ -194,7 +192,18 @@ body
             font-weight: 300
 
         ul
+            overflow-y: scroll
+            overflow-x: hidden
             list-style: none
+
+            &::-webkit-scrollbar
+                width: 5px
+                background: #333
+                border-radius: 15px
+
+            &::-webkit-scrollbar-thumb
+                border-radius: 15px
+                background: #447777
 
             li
                 padding: .2em
@@ -204,15 +213,48 @@ body
                 &:hover
                     color: #55ffff
                     transform: scale(1.1)
+                    text-shadow: 1px 1px 10px white
 
-        &::-webkit-scrollbar
-            width: 5px
-            background: #333
-            border-radius: 15px
+                label
+                    float: right
+                    padding-right: 3em
+                    width: 30%
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
 
-        &::-webkit-scrollbar-thumb
-            border-radius: 15px
-            background: #447777
+                    span
+                        border-radius: 50px
+                        display: block
+                        content: ' '
+                        width: 15%
+                        height: 1em
+                        background: gray
+
+                .span-1
+                    span
+                        &:nth-child(-n+1)
+                            background: #006E7A
+
+                .span-2
+                    span
+                        &:nth-child(-n+2)
+                            background: #128C9E
+
+                .span-3
+                    span
+                        &:nth-child(-n+3)
+                            background: #23AAC2
+
+                .span-4
+                    span
+                        &:nth-child(-n+4)
+                            background: #41BDD5
+
+                .span-5
+                    span
+                        &:nth-child(-n+5)
+                            background: #5FCFE8
 
 #my_projects
 
