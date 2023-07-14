@@ -5,9 +5,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="faviconsc/favicon-16x16.png">
     <link rel="manifest" href="redketchup/site.webmanifest">
-    <script src="/jquery-3.7.0.min.js"></script>
-    <script src="jquary.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <script src="/scripts/jquery-3.7.0.min.js"></script>
+    <script src="/scripts/jquary.js"></script>
+    <link rel="stylesheet" href="/styles/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

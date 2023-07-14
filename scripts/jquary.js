@@ -9,7 +9,7 @@ $(window).on({
         $(':root').css('--grey-progress-start', scrollPercentage + 1 + '%');
     }, load: function () {
         $.ajax({
-            url: 'my_projects.php',
+            url: '/php/my_projects.php',
             method: 'GET',
             success: (response) => {
                 $("#my_projects").html(response);
@@ -43,7 +43,7 @@ $(document).ready(() => {
             message: $("#message").val()
         }
         $.ajax({
-            url: 'mail_sending.php',
+            url: '/php/mail_sending.php',
             method: 'POST',
             data: form_data,
             success: (response) => {
@@ -55,7 +55,7 @@ $(document).ready(() => {
 
 function updateProjectView(project_Id) {
     $.ajax({
-        url: 'project_details.php',
+        url: '/php/project_details.php',
         method: 'POST',
         data: {
             id: project_Id,
