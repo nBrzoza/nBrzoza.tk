@@ -221,12 +221,28 @@ body .container {
   justify-content: center;
   gap: 1em;
 }
+.project-details span {
+  color: lightgray;
+}
+.project-details span:nth-child(2n) {
+  color: #9cd2d2;
+}
+.project-details a {
+  width: fit-content;
+  color: rgba(0, 255, 255, 0.3764705882);
+  transition: 0.3s;
+}
+.project-details a:hover {
+  color: #00FFFF;
+  text-shadow: 0 0 10px cyan;
+}
 
 .contact-form {
   text-align: center;
   font-weight: 300;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .contact-form h3 {
@@ -247,7 +263,6 @@ body .container {
 }
 .contact-form input {
   text-align: center;
-  width: 100%;
 }
 .contact-form input, .contact-form textarea {
   resize: none;

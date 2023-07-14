@@ -217,11 +217,27 @@ body
     justify-content: center
     gap: 1em
 
+    span
+        color: lightgray
+
+        &:nth-child(2n)
+            color: #9cd2d2
+
+    a
+        width: fit-content
+        color: #00FFFF60
+        transition: .3s
+
+        &:hover
+            color: #00FFFF
+            text-shadow: 0 0 10px cyan
+
 .contact-form
     text-align: center
     font-weight: 300
     display: flex
     justify-content: center
+    align-items: center
     flex-direction: column
 
     h3
@@ -242,7 +258,6 @@ body
 
     input
         text-align: center
-        width: 100%
 
     input, textarea
         resize: none
