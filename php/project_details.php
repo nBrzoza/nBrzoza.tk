@@ -3,15 +3,19 @@
 
   $query = pg_query($conn, "SELECT * FROM projects WHERE id = $_POST[id]");
   $results = pg_fetch_object($query);
-  // $technologies = $results->technologies_id;
+  $skillsArray = explode(', ', $results->skills);
+  $skills = [];
+  foreach ($skillsArray as $skill) {
+    $skills[] = "<span>$skill</span>";
+  }
+
 
   if ($results) {
-    echo "<h2><b>Name: </b> ".$results->name."</h2>
+    echo "
+      <h2>Name: <b>".$results->name."</b></h2>
       <p>".$results->description."</p>
-      <h3>Technologies I used:</h3>
-      <ul>
-        .$technologies.
-      </ul>
+      <h3>Skills I used:</h3>
+      <label>".implode(', ', $skills)."</label>
     ";
   } else {
     echo "Something went wrong!";
