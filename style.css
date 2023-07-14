@@ -139,6 +139,12 @@ body .container {
   text-align: left;
   font-weight: 200;
 }
+#start .text h1::before {
+  font-weight: 100;
+  transform: translateX(-20%);
+  content: "> ";
+  color: rgb(79, 220, 220);
+}
 #start .text h1 b {
   background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
   -webkit-background-clip: text;
@@ -146,6 +152,7 @@ body .container {
   font-weight: 250;
 }
 #start .text h4 {
+  padding-left: 1.5em;
   font-weight: 300;
 }
 #start .text h4 b {

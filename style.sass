@@ -131,9 +131,14 @@ body
         color: #ddd
 
         h1
-
             text-align: left
             font-weight: 200
+
+            &::before
+                font-weight: 100
+                transform: translateX(-20%)
+                content: '> '
+                color: rgb(79, 220, 220)
 
             b
                 background: -webkit-linear-gradient(273deg, transparent 0%, #00a6ff40 100%),-webkit-linear-gradient(0deg, #fcb1b140 0%, #aeaeae44 100%), #2dffff
@@ -142,6 +147,7 @@ body
                 font-weight: 250
 
         h4
+            padding-left: 1.5em
             font-weight: 300
 
             b
