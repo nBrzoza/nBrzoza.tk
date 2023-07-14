@@ -131,14 +131,9 @@ body
         color: #ddd
 
         h1
+
             text-align: left
             font-weight: 200
-
-            &::before
-                font-weight: 100
-                transform: translateX(-20%)
-                content: '> '
-                color: rgb(79, 220, 220)
 
             b
                 background: -webkit-linear-gradient(273deg, transparent 0%, #00a6ff40 100%),-webkit-linear-gradient(0deg, #fcb1b140 0%, #aeaeae44 100%), #2dffff
@@ -147,7 +142,6 @@ body
                 font-weight: 250
 
         h4
-            padding-left: 1.5em
             font-weight: 300
 
             b
@@ -172,15 +166,21 @@ body
 
                 &:hover
                     padding: 0 .5em
-                    border-bottom: .5px solid #47daea
+                    border-bottom: .5px solid #2dffff
 
 #my_projects
 
     div
         height: 80%
+        border: 1px solid #444
+
+        &:last-child
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 75%
 
 .projects-list
-    border: 1px solid #444
     background: #222
     height: 100%
     width: 25%
@@ -208,42 +208,13 @@ body
             cursor: pointer
 
 .project-view
-    display: flex
-    border: 1px solid #444
-    justify-content: center
-    align-items: center
-    width: 75%
     flex-direction: column
-
-.project-details
-    width: 90%
-    border: none
-    display: flex
-    flex-direction: column
-    justify-content: center
-    gap: 1em
-
-    span
-        color: lightgray
-
-        &:nth-child(2n)
-            color: #9cd2d2
-
-    a
-        width: fit-content
-        color: #00FFFF60
-        transition: .3s
-
-        &:hover
-            color: #00FFFF
-            text-shadow: 0 0 10px cyan
 
 .contact-form
     text-align: center
     font-weight: 300
     display: flex
     justify-content: center
-    align-items: center
     flex-direction: column
 
     h3
@@ -264,6 +235,7 @@ body
 
     input
         text-align: center
+        width: 100%
 
     input, textarea
         resize: none
