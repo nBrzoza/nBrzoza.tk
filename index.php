@@ -42,6 +42,36 @@
       </div>
     </div>
     <div class="about_me container" id="about_me">
+      <label>
+        Hello! My name is Norbert Brzoza, and I recently completed my technical school education with a diploma as an "Information Technology technician." Although I don't have formal work experience yet, I am eager to embark on a successful career in the field of technology.
+        <br>
+        Throughout my educational journey, I have dedicated myself to acquiring knowledge and expanding my skill set. I have obtained certifications such as "Podstawy Design Thinking dla branży IT" and "Intro to Machine Learning", which have allowed me to delve into diverse aspects of the IT industry.
+        <br>
+        I am particularly passionate about web development and have spent the past two years honing my skills in HTML, JS, CSS, PHP, and Python. I enjoy exploring the possibilities offered by these programming languages and staying up-to-date with the latest advancements in the field.
+        <br>
+        What drives me each day is my unwavering desire to learn and grow. I believe in constantly expanding my knowledge base, embracing new challenges, and pushing the boundaries of what I can achieve. My ultimate goal is to make a positive impact in the world of technology and contribute to creating a better environment for everyone.
+      </label>
+      <div class="my_skills">
+        <h2>I have experience with</h2>
+        <ul>
+        <?php 
+          require 'php/connect.php';
+          $select = pg_fetch_all(pg_query($conn, 'SELECT * FROM skills ORDER BY level DESC'));
+          foreach ($select as $skill) {
+            echo "<li class='$skill[level]'>
+              $skill[name]
+              <label>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </li>";
+          }
+        ?>
+        </ul>
+      </div>
     </div>
     <div class="my_projects container" id="my_projects">
     </div>

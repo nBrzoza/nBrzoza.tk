@@ -14,7 +14,7 @@
     echo "<div>
       <h2>Name: <b>".$results->name."</b></h2>
       <p>".$results->description."</p>
-      <h3>Skills I used:</h3>
+      <h3>What I used:</h3>
       <label>".implode(', ', $skills)."</label>
       <span class='links'>
         <a href='".$results->github_link."' target='_blank'><img src='/images/github.png'></a>

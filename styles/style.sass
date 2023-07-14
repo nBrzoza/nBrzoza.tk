@@ -171,6 +171,49 @@ body
                     padding: 0 .5em
                     border-bottom: .5px solid #2dffff
 
+#about_me
+    color: lightgray
+    justify-content: space-evenly
+    font-weight: 200
+
+    label
+        width: 40%
+        line-height: 2em
+
+    .my_skills
+        display: flex
+        justify-content: left
+        flex-direction: column
+        height: 50%
+        overflow-y: scroll
+        overflow-x: hidden
+        width: 40%
+
+        h2
+            padding-bottom: 1em
+            font-weight: 300
+
+        ul
+            list-style: none
+
+            li
+                padding: .2em
+                transition: .2s ease-in
+                backface-visibility: hidden
+
+                &:hover
+                    color: #55ffff
+                    transform: scale(1.1)
+
+        &::-webkit-scrollbar
+            width: 5px
+            background: #333
+            border-radius: 15px
+
+        &::-webkit-scrollbar-thumb
+            border-radius: 15px
+            background: #447777
+
 #my_projects
 
     div
