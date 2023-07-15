@@ -17,8 +17,8 @@
       <h3>What I used:</h3>
       <label>".implode(', ', $skills)."</label>
       <span class='links'>
-        <a href='".$results->github_link."' target='_blank'><img src='/images/github.png'></a>
-        <a href='https://".$results->demo_url."' target='_blank'><img src='/images/web.png'></a>
+        <a href='".$results->github_link."' target='_blank'><img src='/images/github.png' draggable='false'></a>
+        <a href='https://".$results->demo_url."' target='_blank'><img src='/images/web.png' draggable='false'></a>
         </span>
       </div>";
   } else {

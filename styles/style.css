@@ -130,12 +130,18 @@ body .container {
 }
 
 #start {
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 #start .text {
-  transform: translate(-50%, 120%);
-  max-width: 35%;
+  z-index: 2;
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  max-width: 30%;
+  background: rgba(34, 34, 34, 0.9411764706);
+  padding: 2em;
   color: #ddd;
 }
 #start .text h1 {
@@ -172,6 +178,16 @@ body .container {
 #start .text p a:hover {
   padding: 0 0.5em;
   border-bottom: 0.5px solid #2dffff;
+}
+#start #my_avatar {
+  max-height: 40vw;
+  filter: brightness(0.7);
+  transition: 0.2s ease-in-out;
+  transform: translateX(20%);
+}
+#start #my_avatar:hover {
+  filter: brightness(0.8);
+  transform: scale(1.1) translateX(20%);
 }
 
 #about_me {

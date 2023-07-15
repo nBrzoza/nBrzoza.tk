@@ -40,6 +40,7 @@
         <h4>... and I'm a passionate <b>software and web developer</b> eager to make my mark in the digital world. With a strong commitment to excellence, I combine technical prowess with creative problem&#8209;solving to deliver exceptional results.</h4>
         <p>Read more <a href="#about_me">about me</a> or check some of <a href="#my_projects">my projects</a>!</p>
       </div>
+      <img src="/images/my_avatar.svg" id="my_avatar" draggable='false'>
     </div>
     <div class="about_me container" id="about_me">
       <label>
