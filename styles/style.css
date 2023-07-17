@@ -195,9 +195,22 @@ body .container {
   justify-content: space-evenly;
   font-weight: 200;
 }
-#about_me label {
+#about_me div {
+  max-height: 60vh;
   width: 40%;
   line-height: 2em;
+}
+#about_me div:first-child {
+  overflow-y: scroll;
+}
+#about_me div:first-child::-webkit-scrollbar {
+  width: 5px;
+  background: #111;
+  border-radius: 15px;
+}
+#about_me div:first-child::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #447777;
 }
 #about_me .my_skills {
   display: flex;

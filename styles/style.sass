@@ -192,9 +192,22 @@ body
     justify-content: space-evenly
     font-weight: 200
 
-    label
+    div
+        max-height: 60vh
         width: 40%
         line-height: 2em
+
+        &:first-child
+            overflow-y: scroll
+
+            &::-webkit-scrollbar
+                width: 5px
+                background: #111
+                border-radius: 15px
+
+            &::-webkit-scrollbar-thumb
+                border-radius: 15px
+                background: #447777
 
     .my_skills
         display: flex
