@@ -2,8 +2,8 @@
 <?php
   require 'connect.php';
 ?>
-    <div class="projects-list projects-list-anim">
-        <?php
+<div class="projects-list projects-list-anim ">
+    <?php
             $query = pg_query($conn, 'SELECT * FROM projects ORDER BY id DESC ');
             $results = pg_fetch_all($query);
             foreach ($results as $project) {
@@ -15,10 +15,10 @@
                 ";
             };
         ?>
-    </div>
-    <div class="project-view">
-        Select something to display here!
-    </div>
+</div>
+<div class="project-view ">
+    Select something to display here!
+</div>
 <?php 
     pg_close($conn);
 ?>

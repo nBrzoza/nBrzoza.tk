@@ -500,3 +500,16 @@ footer
     background: linear-gradient(90deg, lightgray var(--page-progress), gray var(--grey-progress-start))
     width: 100vw
     height: .2em
+
+
+.hidden
+    opacity: 0
+    filter: blur(10px)
+    transform: translateX(-100%)
+
+    transition: 1.5s 
+
+.show
+    opacity: 1
+    filter: blur(0)
+    transform: translateX(0)

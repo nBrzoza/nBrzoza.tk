@@ -14,7 +14,8 @@ body {
   color: lightgray;
   height: 300vh !important;
   background-attachment: fixed;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: var(--screen-height);
   background-image: radial-gradient(at top, #111 0%, #000 100%);
 }
@@ -23,7 +24,11 @@ body .menu {
 }
 body nav {
   z-index: 10;
-  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8666666667) 65%, transparent 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 0.8666666667) 65%,
+    transparent 100%
+  );
   position: fixed;
   top: 0;
   left: 0;
@@ -41,7 +46,19 @@ body nav a {
 }
 body nav h2 {
   font-weight: 200;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(0, 166, 255, 0.2509803922) 100%
+    ),
+    -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+            174,
+            174,
+            174,
+            0.2666666667
+          )
+          100%),
+    #2dffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 1s;
@@ -68,7 +85,19 @@ body nav h2:hover {
     margin: 0 5%;
     display: block;
     width: 100%;
-    background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+    background: -webkit-linear-gradient(
+        273deg,
+        transparent 0%,
+        rgba(0, 166, 255, 0.2509803922) 100%
+      ),
+      -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+              174,
+              174,
+              174,
+              0.2666666667
+            )
+            100%),
+      #2dffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.15s ease-in-out;
@@ -81,7 +110,19 @@ body nav h2:hover {
     border-color: #2dffff;
     cursor: pointer;
     padding: 0 5%;
-    background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #c3dfdf;
+    background: -webkit-linear-gradient(
+        273deg,
+        transparent 0%,
+        rgba(0, 166, 255, 0.2509803922) 100%
+      ),
+      -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+              174,
+              174,
+              174,
+              0.2666666667
+            )
+            100%),
+      #c3dfdf;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -149,7 +190,19 @@ body .container {
   font-weight: 200;
 }
 #start .text h1 b {
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(0, 166, 255, 0.2509803922) 100%
+    ),
+    -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+            174,
+            174,
+            174,
+            0.2666666667
+          )
+          100%),
+    #2dffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 250;
@@ -159,7 +212,14 @@ body .container {
 }
 #start .text h4 b {
   font-weight: 350;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), lightcyan;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(224, 57, 57, 0.3960784314) 120%
+    ),
+    -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent
+          100%),
+    lightcyan;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s;
@@ -168,7 +228,14 @@ body .container {
   transform: scale(1.2);
 }
 #start .text p a {
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(224, 57, 57, 0.3960784314) 120%), -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent 100%), lightcyan;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(224, 57, 57, 0.3960784314) 120%
+    ),
+    -webkit-linear-gradient(0deg, rgba(0, 255, 255, 0.5019607843) 0%, transparent
+          100%),
+    lightcyan;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -263,20 +330,20 @@ body .container {
   height: 1em;
   background: gray;
 }
-#about_me .my_skills ul li .span-1 span:nth-child(-n+1) {
-  background: #006E7A;
+#about_me .my_skills ul li .span-1 span:nth-child(-n + 1) {
+  background: #006e7a;
 }
-#about_me .my_skills ul li .span-2 span:nth-child(-n+2) {
-  background: #128C9E;
+#about_me .my_skills ul li .span-2 span:nth-child(-n + 2) {
+  background: #128c9e;
 }
-#about_me .my_skills ul li .span-3 span:nth-child(-n+3) {
-  background: #23AAC2;
+#about_me .my_skills ul li .span-3 span:nth-child(-n + 3) {
+  background: #23aac2;
 }
-#about_me .my_skills ul li .span-4 span:nth-child(-n+4) {
-  background: #41BDD5;
+#about_me .my_skills ul li .span-4 span:nth-child(-n + 4) {
+  background: #41bdd5;
 }
-#about_me .my_skills ul li .span-5 span:nth-child(-n+5) {
-  background: #5FCFE8;
+#about_me .my_skills ul li .span-5 span:nth-child(-n + 5) {
+  background: #5fcfe8;
 }
 
 #my_projects {
@@ -328,14 +395,14 @@ body .container {
   font-weight: 300;
 }
 .project-view h2 b {
-  color: #ABFFF5;
+  color: #abfff5;
   font-weight: 400;
 }
 .project-view span {
-  color: #C1FAFF;
+  color: #c1faff;
 }
 .project-view span:nth-child(2n) {
-  color: #B5E8F9;
+  color: #b5e8f9;
   font-weight: 200;
 }
 .project-view div {
@@ -376,7 +443,19 @@ body .container {
 }
 .contact-form h3 {
   font-size: 2em;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(0, 166, 255, 0.2509803922) 100%
+    ),
+    -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+            174,
+            174,
+            174,
+            0.2666666667
+          )
+          100%),
+    #2dffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -394,7 +473,8 @@ body .container {
   text-align: center;
   width: 100%;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   resize: none;
   font-family: monospace;
   padding: 0.5em;
@@ -403,15 +483,22 @@ body .container {
   border-radius: 15px;
   transition: 0.3s;
 }
-.contact-form input::placeholder, .contact-form textarea::placeholder {
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
   color: #444;
 }
-.contact-form input:hover, .contact-form input:focus, .contact-form textarea:hover, .contact-form textarea:focus {
+.contact-form input:hover,
+.contact-form input:focus,
+.contact-form textarea:hover,
+.contact-form textarea:focus {
   outline: none;
   border: #2dffff 2px solid;
   box-shadow: 0 0 20px #008080;
 }
-.contact-form input:hover::placeholder, .contact-form input:focus::placeholder, .contact-form textarea:hover::placeholder, .contact-form textarea:focus::placeholder {
+.contact-form input:hover::placeholder,
+.contact-form input:focus::placeholder,
+.contact-form textarea:hover::placeholder,
+.contact-form textarea:focus::placeholder {
   color: #222;
 }
 .contact-form button {
@@ -426,7 +513,8 @@ body .container {
   transition: 0.45s;
   width: 50%;
 }
-.contact-form button:hover, .contact-form button:focus {
+.contact-form button:hover,
+.contact-form button:focus {
   background: rgba(45, 255, 255, 0.1882352941);
   outline: none;
   transform: scale(1.2);
@@ -436,12 +524,36 @@ body .container {
 .contact-text {
   font-size: 150%;
   font-weight: 200;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(0, 166, 255, 0.2509803922) 100%
+    ),
+    -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+            174,
+            174,
+            174,
+            0.2666666667
+          )
+          100%),
+    #2dffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .contact-text b {
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), white;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(0, 166, 255, 0.2509803922) 100%
+    ),
+    -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+            174,
+            174,
+            174,
+            0.2666666667
+          )
+          100%),
+    white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -466,7 +578,19 @@ footer {
 footer p {
   font-weight: 100;
   font-size: 1.25em;
-  background: -webkit-linear-gradient(273deg, transparent 0%, rgba(0, 166, 255, 0.2509803922) 100%), -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(174, 174, 174, 0.2666666667) 100%), #2dffff;
+  background: -webkit-linear-gradient(
+      273deg,
+      transparent 0%,
+      rgba(0, 166, 255, 0.2509803922) 100%
+    ),
+    -webkit-linear-gradient(0deg, rgba(252, 177, 177, 0.2509803922) 0%, rgba(
+            174,
+            174,
+            174,
+            0.2666666667
+          )
+          100%),
+    #2dffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -480,7 +604,9 @@ footer p {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 2px;
   background-color: #fff;
@@ -503,9 +629,26 @@ footer p {
 #progress {
   position: fixed;
   bottom: 0;
-  background: linear-gradient(90deg, lightgray var(--page-progress), gray var(--grey-progress-start));
+  background: linear-gradient(
+    90deg,
+    lightgray var(--page-progress),
+    gray var(--grey-progress-start)
+  );
   width: 100vw;
   height: 0.2em;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: 1.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=style.css.map */
